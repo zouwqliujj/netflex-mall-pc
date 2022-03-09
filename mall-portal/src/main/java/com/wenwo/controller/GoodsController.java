@@ -47,7 +47,7 @@ public class GoodsController {
         param.add("pomotionInfo",promotionInfo);
 
         HttpEntity<MultiValueMap<String,Object>> httpEntity=new HttpEntity<>(param,new HttpHeaders());
-        ResponseEntity<String> response=restTemplate.postForEntity("http://order-service/order",httpEntity,String.class);
+        ResponseEntity<String> response=restTemplate.postForEntity("http://orders-service/order",httpEntity,String.class);
         return response.getBody();
     }
 }
