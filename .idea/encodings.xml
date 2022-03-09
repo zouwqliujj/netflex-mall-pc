@@ -2,11 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/goods-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-portal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/marking-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ms-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ms-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orders-service" charset="UTF-8" />
   </component>
 </project>

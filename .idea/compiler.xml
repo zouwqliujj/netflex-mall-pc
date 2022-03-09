@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="orders-service" />
-        <module name="marking-service" />
+        <module name="eureka-server01" />
         <module name="goods-service" />
+        <module name="orders-service" />
+        <module name="eureka-server02" />
+        <module name="marking-service" />
         <module name="mall-portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka-server01" target="1.8" />
+      <module name="eureka-server02" target="1.8" />
       <module name="goods-service" target="1.8" />
       <module name="mall-portal" target="1.8" />
       <module name="marking-service" target="1.8" />
@@ -23,6 +27,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server01" options="-parameters" />
+      <module name="eureka-server02" options="-parameters" />
       <module name="goods-service" options="-parameters" />
       <module name="mall-portal" options="-parameters" />
       <module name="marking-service" options="-parameters" />
