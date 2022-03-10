@@ -22,7 +22,9 @@
         <module>mall-portal</module>
         <module>eureka-server01</module>
         <module>eureka-server02</module>
-
+        <module>orders-api</module>
+        <module>goods-api</module>
+        <module>marking-api</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -50,13 +52,5 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
