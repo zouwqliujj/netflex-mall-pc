@@ -8,6 +8,7 @@ import com.wenwo.ordersapi.IOrdersService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
@@ -65,5 +66,12 @@ public class GoodsController {
         String result = ordersService.createOrder(goods, promotion);
 
         return result;
+    }
+
+    @GetMapping("/goods/{id}")
+    public String getGoodById(@PathVariable("id")int id) throws Exception {
+        log.info("begin do order");
+        String goods=goodsService.getGoodsById(id);
+        return goods;
     }
 }
